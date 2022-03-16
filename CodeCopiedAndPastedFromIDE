@@ -1,0 +1,108 @@
+// define MY_LED to be the D7 
+const pin_t MY_LED = D7;
+
+SYSTEM_THREAD(ENABLED);
+
+// setup() method
+void setup() {
+	// Setting Pin
+	pinMode(MY_LED, OUTPUT);
+
+}
+
+// The loop() method is called frequently.
+void loop() {
+
+    
+	// Morse Code A (di dah)
+	digitalWrite(MY_LED, HIGH);
+	delay(400ms);
+	digitalWrite(MY_LED, LOW);
+	delay(400ms);
+	digitalWrite(MY_LED, HIGH);
+	delay(1200ms);
+	digitalWrite(MY_LED, LOW);
+	delay(1200ms);
+	
+	//Morse Code M (dah dah)
+	digitalWrite(MY_LED, HIGH);
+	delay(1200ms);
+	digitalWrite(MY_LED, LOW);
+	delay(400ms);
+	digitalWrite(MY_LED, HIGH);
+	delay(1200ms);
+	digitalWrite(MY_LED, LOW);
+	delay(1200ms);
+	
+	//Morse Code B (dah di di dit)
+	digitalWrite(MY_LED, HIGH);
+	delay(1200ms);
+	digitalWrite(MY_LED, LOW);
+	delay(400ms);
+	digitalWrite(MY_LED, HIGH);
+	delay(400ms);
+	digitalWrite(MY_LED, LOW);
+	delay(400ms);
+	digitalWrite(MY_LED, HIGH);
+	delay(400ms);
+	digitalWrite(MY_LED, LOW);
+	delay(400ms);
+	digitalWrite(MY_LED, HIGH);
+	delay(400ms);
+	digitalWrite(MY_LED, LOW);
+	delay(1200ms);
+	
+	//Morse Code R (di dah dit)
+	digitalWrite(MY_LED, HIGH);
+	delay(400ms);
+	digitalWrite(MY_LED, LOW);
+	delay(400ms);
+	
+	digitalWrite(MY_LED, HIGH);
+	delay(1200ms);
+	digitalWrite(MY_LED, LOW);
+	delay(400ms);
+	
+	digitalWrite(MY_LED, HIGH);
+	delay(400ms);
+	digitalWrite(MY_LED, LOW);
+	delay(1200ms);
+	
+	//Morse Code O (dah dah dah)
+	digitalWrite(MY_LED, HIGH);
+	delay(1200ms);
+	digitalWrite(MY_LED, LOW);
+	delay(400ms);
+	
+	digitalWrite(MY_LED, HIGH);
+	delay(1200ms);
+	digitalWrite(MY_LED, LOW);
+	delay(400ms);
+	
+	digitalWrite(MY_LED, HIGH);
+	delay(1200ms);
+	digitalWrite(MY_LED, LOW);
+	delay(1200ms);
+	
+	//Morse Code S (di di dit)
+	digitalWrite(MY_LED, HIGH);
+	delay(400ms);
+	digitalWrite(MY_LED, LOW);
+	delay(400ms);
+	
+	digitalWrite(MY_LED, HIGH);
+	delay(400ms);
+	digitalWrite(MY_LED, LOW);
+	delay(400ms);
+	
+	digitalWrite(MY_LED, HIGH);
+	delay(400ms);
+	digitalWrite(MY_LED, LOW);
+	delay(1200ms);
+	
+	//Morse Code E (dit)
+	digitalWrite(MY_LED, HIGH);
+	delay(400ms);
+	digitalWrite(MY_LED, LOW);
+	delay(2800ms);
+}
